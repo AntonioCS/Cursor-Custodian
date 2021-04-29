@@ -1,0 +1,15 @@
+{
+	"name": "cursorcustodian",
+	"version-string": "0.1.0-dev",
+	"homepage": "",
+	"description": "",
+	"dependencies": [
+        "sdl2",
+        {
+            "name": "sdl2-image",
+            "features": [ "libjpeg-turbo", "libwebp" , "tiff" ]
+        },
+        "sdl2-ttf",
+        "sdl2-mixer"
+    ]
+}
