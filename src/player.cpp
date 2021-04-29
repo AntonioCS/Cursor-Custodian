@@ -138,26 +138,22 @@ void Player::update(Ground& ground)
 	
 }
 
-const char* Player::getScore()
+std::string Player::getScore() const
 {
-	std::string s = std::to_string(score);
-	s = "DISTANCE: " + s;
-	return s.c_str();
+    return { "DISTANCE: " + std::to_string(score) };
 }
 
-const char* Player::getHighscore()
+std::string Player::getHighscore() const
 {
-	std::string s = std::to_string(highscore);
-	s = "BEST: " + s;
-	return s.c_str();
+    return { "BEST: " + std::to_string(highscore) };
 }
 
-int Player::getScoreInt()
+int Player::getScoreInt() const
 {
 	return score;
 }
 
-int Player::isDead()
+int Player::isDead() const
 {
 	return dead;
 }

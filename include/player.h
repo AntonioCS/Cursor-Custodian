@@ -14,10 +14,10 @@ public:
 	float distanceFromCursor();
 	bool jump();
 	void update(Ground& ground);
-	const char* getScore();
-	const char* getHighscore();
-	int getScoreInt();
-	int isDead();
+    std::string getScore() const;
+	std::string getHighscore() const;
+	int getScoreInt() const;
+	int isDead() const;
 	void reset();
 private:
 	float velocityX, velocityY;
